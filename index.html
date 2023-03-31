@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://unpkg.com/tailwindcss@2.2.19/dist/tailwind.min.css" />
+
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="flex flex-row-reverse justify-center items-center min-h-screen w-full bg-blue-200 gap-10">
+        <div class="flex flex-col gap-2">
+            <!-- Lampu 1 -->
+            <img src=" assets/images/off.png" alt="..." id="lampu1">
+            <button onclick="saklar('on', 1)" class="bg-blue-500 hover:bg-black text-white font-bold py-2 px-4 rounded">Nyalakan lampu</button>
+            <button onclick="saklar('off', 1) " class="bg-red-500 hover:bg-black text-white font-bold py-2 px-4 rounded">Matikan lampu</button>
+        </div>
+
+        <div class="flex flex-col gap-2">
+            <!-- Lampu 2 -->
+            <img src="assets/images/off.png" alt="..." id="lampu2">
+            <button onclick="saklar('on', 2)" class="bg-blue-500 hover:bg-black text-white font-bold py-2 px-4 rounded">Nyalakan lampu</button>
+            <button onclick="saklar('off', 2)" class="bg-red-500 hover:bg-black text-white font-bold py-2 px-4 rounded">Matikan
+                lampu</button>
+        </div>
+
+        <div class="flex flex-col gap-2">
+            <!-- Lampu 3 -->
+            <img src="assets/images/off.png" alt="..." id="lampu3">
+            <button onclick="saklar('on', 3)" class="bg-blue-500 hover:bg-black text-white font-bold py-2 px-4 rounded">Nyalakan lampu</button>
+            <button onclick="saklar('off', 3)" class="bg-red-500 hover:bg-black text-white font-bold py-2 px-4 rounded">Matikan
+                lampu</button>
+        </div>
+    </div>
+
+    <script src="saklar.js" type="application/javascript"></script>
+
+</body>
+
+</html>
